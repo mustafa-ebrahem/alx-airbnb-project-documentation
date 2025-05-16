@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="1000" height="1800" xmlns="http://www.w3.org/2000/svg">
+  <style>
+    .start-end {
+      fill: #FFD54F;
+      stroke: #FF9800;
+      stroke-width: 2px;
+    }
+    .process {
+      fill: #BBDEFB;
+      stroke: #2196F3;
+      stroke-width: 2px;
+    }
+    .decision {
+      fill: #E1BEE7;
+      stroke: #9C27B0;
+      stroke-width: 2px;
+    }
+    .data {
+      fill: #C8E6C9;
+      stroke: #4CAF50;
+      stroke-width: 2px;
+    }
+    .database {
+      fill: #FFCCBC;
+      stroke: #FF5722;
+      stroke-width: 2px;
+    }
+    .connector {
+      stroke: #616161;
+      stroke-width: 1.5px;
+      fill: none;
+      marker-end: url(#arrowhead);
+    }
+    .yes-label {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      fill: #2E7D32;
+    }
+    .no-label {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      fill: #C62828;
+    }
+    .text {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      text-anchor: middle;
+    }
+    .title {
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      text-anchor: middle;
+    }
+    .subtitle {
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+      text-anchor: middle;
+    }
+  </style>
+
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="7" refX="9" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#616161" />
+    </marker>
+  </defs>
+  
+  <!-- Title -->
+  <text x="500" y="40" class="title">Property Booking Process - Airbnb Clone</text>
+  <text x="500" y="70" class="subtitle">Backend Workflow and Data Flow Visualization</text>
+  
+  <!-- Start -->
+  <rect x="400" y="100" width="200" height="60" rx="30" ry="30" class="start-end" />
+  <text x="500" y="135" class="text">Start: User initiates property search</text>
+  
+  <!-- Search Process -->
+  <rect x="400" y="200" width="200" height="60" class="process" />
+  <text x="500" y="235" class="text">Search Properties by Criteria</text>
+  
+  <!-- DB read -->
+  <rect x="650" y="200" width="200" height="60" rx="10" ry="10" class="database" />
+  <text x="750" y="235" class="text">Query Properties DB</text>
+  
+  <!-- Search Results -->
+  <path d="M 400,300 L 600,300 L 600,350 L 400,350 Z" class="data" />
+  <text x="500" y="330" class="text">Display Search Results</text>
+  
+  <!-- Select Property -->
+  <rect x="400" y="400" width="200" height="60" class="process" />
+  <text x="500" y="435" class="text">User Selects Property</text>
+  
+  <!-- DB read property -->
+  <rect x="650" y="400" width="200" height="60" rx="10" ry="10" class="database" />
+  <text x="750" y="435" class="text">Fetch Property Details</text>
+  
+  <!-- Check Availability -->
+  <rect x="400" y="500" width="200" height="60" class="process" />
+  <text x="500" y="535" class="text">Check Property Availability</text>
+  
+  <!-- DB read availability -->
+  <rect x="650" y="500" width="200" height="60" rx="10" ry="10" class="database" />
+  <text x="750" y="535" class="text">Query Bookings DB</text>
+  
+  <!-- Available? -->
+  <path d="M 400,600 L 500,650 L 600,600 L 500,550 Z" class="decision" />
+  <text x="500" y="610" class="text">Property Available?</text>
+  
+  <!-- Not Available -->
+  <rect x="200" y="600" width="150" height="60" class="process" />
+  <text x="275" y="635" class="text">Show Unavailable</text>
+  <text x="275" y="655" class="text">Message</text>
+  
+  <!-- Input Booking Details -->
+  <rect x="400" y="700" width="200" height="60" class="process" />
+  <text x="500" y="735" class="text">Input Booking Details</text>
+  
+  <!-- Review Booking -->
+  <path d="M 400,800 L 600,800 L 600,850 L 400,850 Z" class="data" />
+  <text x="500" y="830" class="text">Review Booking Summary</text>
+  
+  <!-- Confirm? -->
+  <path d="M 400,900 L 500,950 L 600,900 L 500,850 Z" class="decision" />
+  <text x="500" y="910" class="text">User Confirms?</text>
+  
+  <!-- Cancel Booking -->
+  <rect x="200" y="900" width="150" height="60" class="process" />
+  <text x="275" y="935" class="text">Cancel Booking</text>
+  
+  <!-- Process Payment -->
+  <rect x="400" y="1000" width="200" height="60" class="process" />
+  <text x="500" y="1035" class="text">Process Payment</text>
+  
+  <!-- Payment Gateway -->
+  <rect x="650" y="1000" width="200" height="60" rx="10" ry="10" class="database" />
+  <text x="750" y="1035" class="text">Payment Gateway</text>
+  
+  <!-- Payment Success? -->
+  <path d="M 400,1100 L 500,1150 L 600,1100 L 500,1050 Z" class="decision" />
+  <text x="500" y="1110" class="text">Payment Successful?</text>
+  
+  <!-- Payment Failed -->
+  <rect x="200" y="1100" width="150" height="60" class="process" />
+  <text x="275" y="1130" class="text">Show Payment</text>
+  <text x="275" y="1150" class="text">Failed Message</text>
+  
+  <!-- Create Booking Record -->
+  <rect x="400" y="1200" width="200" height="60" class="process" />
+  <text x="500" y="1235" class="text">Create Booking Record</text>
+  
+  <!-- Save to DB -->
+  <rect x="650" y="1200" width="200" height="60" rx="10" ry="10" class="database" />
+  <text x="750" y="1235" class="text">Save to Bookings DB</text>
+  
+  <!-- Generate Confirmation -->
+  <rect x="400" y="1300" width="200" height="60" class="process" />
+  <text x="500" y="1335" class="text">Generate Booking Confirmation</text>
+  
+  <!-- Send Notifications -->
+  <rect x="400" y="1400" width="200" height="60" class="process" />
+  <text x="500" y="1435" class="text">Send Notifications</text>
+  
+  <!-- Host Notification -->
+  <rect x="650" y="1350" width="200" height="60" class="process" />
+  <text x="750" y="1385" class="text">Notify Host</text>
+  
+  <!-- Guest Notification -->
+  <rect x="650" y="1450" width="200" height="60" class="process" />
+  <text x="750" y="1485" class="text">Notify Guest</text>
+  
+  <!-- Display Confirmation -->
+  <path d="M 400,1500 L 600,1500 L 600,1550 L 400,1550 Z" class="data" />
+  <text x="500" y="1530" class="text">Display Booking Confirmation</text>
+  
+  <!-- End -->
+  <rect x="400" y="1600" width="200" height="60" rx="30" ry="30" class="start-end" />
+  <text x="500" y="1635" class="text">End: Booking Process Complete</text>
+  
+  <!-- Connections -->
+  <!-- Start to Search -->
+  <path d="M 500,160 L 500,200" class="connector" />
+  
+  <!-- Search to DB -->
+  <path d="M 600,230 L 650,230" class="connector" />
+  
+  <!-- DB to Search Results -->
+  <path d="M 750,260 C 750,280 650,280 500,300" class="connector" />
+  
+  <!-- Search Results to Select Property -->
+  <path d="M 500,350 L 500,400" class="connector" />
+  
+  <!-- Select Property to DB -->
+  <path d="M 600,430 L 650,430" class="connector" />
+  
+  <!-- DB to Check Availability -->
+  <path d="M 750,460 C 750,480 650,480 500,500" class="connector" />
+  
+  <!-- Check Availability to DB -->
+  <path d="M 600,530 L 650,530" class="connector" />
+  
+  <!-- DB to Available? -->
+  <path d="M 750,560 C 750,580 650,580 500,580" class="connector" />
+  
+  <!-- Available? to Not Available (No) -->
+  <path d="M 400,600 L 350,600" class="connector" />
+  <text x="380" y="590" class="no-label">No</text>
+  
+  <!-- Not Available back to Search -->
+  <path d="M 275,660 C 275,750 100,750 100,230 C 100,230 100,230 400,230" class="connector" />
+  
+  <!-- Available? to Input Booking Details (Yes) -->
+  <path d="M 500,650 L 500,700" class="connector" />
+  <text x="510" y="680" class="yes-label">Yes</text>
+  
+  <!-- Input Booking Details to Review Booking -->
+  <path d="M 500,760 L 500,800" class="connector" />
+  
+  <!-- Review Booking to Confirm? -->
+  <path d="M 500,850 L 500,880" class="connector" />
+  
+  <!-- Confirm? to Cancel (No) -->
+  <path d="M 400,900 L 350,900" class="connector" />
+  <text x="380" y="890" class="no-label">No</text>
+  
+  <!-- Cancel back to Search -->
+  <path d="M 275,960 C 275,980 150,980 150,230 C 150,230 150,230 400,230" class="connector" />
+  
+  <!-- Confirm? to Process Payment (Yes) -->
+  <path d="M 500,950 L 500,1000" class="connector" />
+  <text x="510" y="980" class="yes-label">Yes</text>
+  
+  <!-- Process Payment to Payment Gateway -->
+  <path d="M 600,1030 L 650,1030" class="connector" />
+  
+  <!-- Payment Gateway to Payment Success? -->
+  <path d="M 750,1060 C 750,1080 650,1080 500,1080" class="connector" />
+  
+  <!-- Payment Success? to Payment Failed (No) -->
+  <path d="M 400,1100 L 350,1100" class="connector" />
+  <text x="380" y="1090" class="no-label">No</text>
+  
+  <!-- Payment Failed to Input Booking Details -->
+  <path d="M 275,1160 C 275,1180 200,1180 200,730 C 200,730 200,730 400,730" class="connector" />
+  
+  <!-- Payment Success? to Create Booking (Yes) -->
+  <path d="M 500,1150 L 500,1200" class="connector" />
+  <text x="510" y="1180" class="yes-label">Yes</text>
+  
+  <!-- Create Booking to DB -->
+  <path d="M 600,1230 L 650,1230" class="connector" />
+  
+  <!-- DB to Generate Confirmation -->
+  <path d="M 750,1260 C 750,1280 650,1280 500,1300" class="connector" />
+  
+  <!-- Generate Confirmation to Send Notifications -->
+  <path d="M 500,1360 L 500,1400" class="connector" />
+  
+  <!-- Send Notifications to Host Notification -->
+  <path d="M 600,1420 C 620,1420 620,1380 650,1380" class="connector" />
+  
+  <!-- Send Notifications to Guest Notification -->
+  <path d="M 600,1440 C 620,1440 620,1480 650,1480" class="connector" />
+  
+  <!-- Host Notification to Display Confirmation -->
+  <path d="M 750,1410 C 750,1500 650,1500 600,1520" class="connector" />
+  
+  <!-- Guest Notification to Display Confirmation -->
+  <path d="M 750,1450 C 750,1480 650,1480 600,1510" class="connector" />
+  
+  <!-- Display Confirmation to End -->
+  <path d="M 500,1550 L 500,1600" class="connector" />
+</svg>
