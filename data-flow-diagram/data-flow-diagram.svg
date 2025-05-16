@@ -1,0 +1,761 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   width="1200"
+   height="1200"
+   version="1.1"
+   id="svg62"
+   sodipodi:docname="data-flow-diagram.svg"
+   inkscape:version="1.4.2 (f4327f4, 2025-05-13)"
+   inkscape:export-filename="data-flow-diagram.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview62"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.3753227"
+     inkscape:cx="632.94237"
+     inkscape:cy="510.06212"
+     inkscape:window-width="2560"
+     inkscape:window-height="1369"
+     inkscape:window-x="-8"
+     inkscape:window-y="-8"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg62"
+     inkscape:export-bgcolor="#ffffffff" />
+  <style
+     id="style1">
+    .external-entity {
+      fill: #FFE0B2;
+      stroke: #FF9800;
+      stroke-width: 2px;
+    }
+    .process {
+      fill: #BBDEFB;
+      stroke: #2196F3;
+      stroke-width: 2px;
+    }
+    .data-store {
+      fill: #C8E6C9;
+      stroke: #4CAF50;
+      stroke-width: 2px;
+    }
+    .data-flow {
+      stroke: #616161;
+      stroke-width: 1.5px;
+      fill: none;
+      marker-end: url(#arrowhead);
+    }
+    .label {
+      font-family: Arial, sans-serif;
+      font-size: 12px;
+      text-anchor: middle;
+    }
+    .entity-label {
+      font-family: Arial, sans-serif;
+      font-size: 14px;
+      text-anchor: middle;
+      font-weight: bold;
+    }
+    .flow-label {
+      font-family: Arial, sans-serif;
+      font-size: 11px;
+      text-anchor: middle;
+      fill: #616161;
+    }
+    .title {
+      font-family: Arial, sans-serif;
+      font-size: 24px;
+      font-weight: bold;
+      text-anchor: middle;
+    }
+  </style>
+  <defs
+     id="defs1">
+    <marker
+       id="arrowhead"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="0 0, 10 3.5, 0 7"
+         fill="#616161"
+         id="polygon1" />
+    </marker>
+    <marker
+       id="arrowhead-9"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="10,3.5 0,7 0,0 "
+         fill="#616161"
+         id="polygon1-4" />
+    </marker>
+    <marker
+       id="arrowhead-4"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="10,3.5 0,7 0,0 "
+         fill="#616161"
+         id="polygon1-5" />
+    </marker>
+    <marker
+       id="arrowhead-1"
+       markerWidth="10"
+       markerHeight="7"
+       refX="9"
+       refY="3.5"
+       orient="auto">
+      <polygon
+         points="10,3.5 0,7 0,0 "
+         fill="#616161"
+         id="polygon1-1" />
+    </marker>
+  </defs>
+  <!-- Title -->
+  <text
+     x="626.73523"
+     y="103.75321"
+     class="title"
+     id="text1">Airbnb Clone - Data Flow Diagram</text>
+  <!-- External Entities -->
+  <!-- Guest Users -->
+  <rect
+     x="76.735222"
+     y="263.7532"
+     width="120"
+     height="60"
+     rx="5"
+     ry="5"
+     class="external-entity"
+     id="rect1" />
+  <text
+     x="136.73521"
+     y="298.7532"
+     class="entity-label"
+     id="text2">Guest Users</text>
+  <!-- Host Users -->
+  <rect
+     x="76.735222"
+     y="563.75323"
+     width="120"
+     height="60"
+     rx="5"
+     ry="5"
+     class="external-entity"
+     id="rect2" />
+  <text
+     x="136.73521"
+     y="598.75323"
+     class="entity-label"
+     id="text3">Host Users</text>
+  <!-- Admin Users -->
+  <rect
+     x="76.735222"
+     y="863.75323"
+     width="120"
+     height="60"
+     rx="5"
+     ry="5"
+     class="external-entity"
+     id="rect3" />
+  <text
+     x="136.73521"
+     y="898.75323"
+     class="entity-label"
+     id="text4">Admin Users</text>
+  <!-- Payment Gateway -->
+  <rect
+     x="1056.7352"
+     y="563.75323"
+     width="120"
+     height="60"
+     rx="5"
+     ry="5"
+     class="external-entity"
+     id="rect4" />
+  <text
+     x="1116.7352"
+     y="598.75323"
+     class="entity-label"
+     id="text5">Payment Gateway</text>
+  <!-- Processes -->
+  <!-- User Management -->
+  <ellipse
+     cx="326.73523"
+     cy="263.7532"
+     rx="80"
+     ry="50"
+     class="process"
+     id="ellipse5" />
+  <text
+     x="326.73523"
+     y="263.7532"
+     class="entity-label"
+     id="text6">1. User</text>
+  <text
+     x="326.73523"
+     y="283.7532"
+     class="entity-label"
+     id="text7">Management</text>
+  <!-- Property Management -->
+  <ellipse
+     cx="326.73523"
+     cy="563.75323"
+     rx="80"
+     ry="50"
+     class="process"
+     id="ellipse7" />
+  <text
+     x="326.73523"
+     y="563.75323"
+     class="entity-label"
+     id="text8">2. Property</text>
+  <text
+     x="326.73523"
+     y="583.75323"
+     class="entity-label"
+     id="text9">Management</text>
+  <!-- Search & Filter Engine -->
+  <ellipse
+     cx="526.73523"
+     cy="413.7532"
+     rx="80"
+     ry="50"
+     class="process"
+     id="ellipse9" />
+  <text
+     x="526.73523"
+     y="413.7532"
+     class="entity-label"
+     id="text10">3. Search</text>
+  <text
+     x="526.73523"
+     y="433.7532"
+     class="entity-label"
+     id="text11">Filter Engine</text>
+  <!-- Booking Management -->
+  <ellipse
+     cx="726.73523"
+     cy="263.7532"
+     rx="80"
+     ry="50"
+     class="process"
+     id="ellipse11" />
+  <text
+     x="726.73523"
+     y="263.7532"
+     class="entity-label"
+     id="text12">4. Booking</text>
+  <text
+     x="726.73523"
+     y="283.7532"
+     class="entity-label"
+     id="text13">Management</text>
+  <!-- Review System -->
+  <ellipse
+     cx="726.73523"
+     cy="413.7532"
+     rx="80"
+     ry="50"
+     class="process"
+     id="ellipse13" />
+  <text
+     x="726.73523"
+     y="413.7532"
+     class="entity-label"
+     id="text14">5. Review</text>
+  <text
+     x="726.73523"
+     y="433.7532"
+     class="entity-label"
+     id="text15">System</text>
+  <!-- Payment Processing -->
+  <ellipse
+     cx="826.73523"
+     cy="563.75323"
+     rx="80"
+     ry="50"
+     class="process"
+     id="ellipse15" />
+  <text
+     x="826.73523"
+     y="563.75323"
+     class="entity-label"
+     id="text16">6. Payment</text>
+  <text
+     x="826.73523"
+     y="583.75323"
+     class="entity-label"
+     id="text17">Processing</text>
+  <!-- Notification System -->
+  <ellipse
+     cx="526.73523"
+     cy="713.75323"
+     rx="80"
+     ry="50"
+     class="process"
+     id="ellipse17" />
+  <text
+     x="526.73523"
+     y="713.75323"
+     class="entity-label"
+     id="text18">7. Notification</text>
+  <text
+     x="526.73523"
+     y="733.75323"
+     class="entity-label"
+     id="text19">System</text>
+  <!-- Admin Dashboard -->
+  <ellipse
+     cx="326.73523"
+     cy="863.75323"
+     rx="80"
+     ry="50"
+     class="process"
+     id="ellipse19" />
+  <text
+     x="326.73523"
+     y="863.75323"
+     class="entity-label"
+     id="text20">8. Admin</text>
+  <text
+     x="326.73523"
+     y="883.75323"
+     class="entity-label"
+     id="text21">Dashboard</text>
+  <!-- Data Stores -->
+  <!-- Users DB -->
+  <rect
+     x="281.09784"
+     y="102.67664"
+     width="150"
+     height="40"
+     rx="5"
+     ry="5"
+     class="data-store"
+     id="rect21" />
+  <text
+     x="355.37073"
+     y="119.67852"
+     class="entity-label"
+     id="text22">Users DB</text>
+  <!-- Properties DB -->
+  <rect
+     x="276.73523"
+     y="429.21585"
+     width="150"
+     height="40"
+     rx="5"
+     ry="5"
+     class="data-store"
+     id="rect22" />
+  <text
+     x="351.73523"
+     y="451.30743"
+     class="entity-label"
+     id="text23">Properties DB</text>
+  <!-- Bookings DB -->
+  <rect
+     x="678.91656"
+     y="117.21869"
+     width="150"
+     height="40"
+     rx="5"
+     ry="5"
+     class="data-store"
+     id="rect23" />
+  <text
+     x="752.46234"
+     y="131.31215"
+     class="entity-label"
+     id="text24">Bookings DB</text>
+  <!-- Reviews DB -->
+  <rect
+     x="676.73523"
+     y="463.7532"
+     width="150"
+     height="40"
+     rx="5"
+     ry="5"
+     class="data-store"
+     id="rect24" />
+  <text
+     x="751.73523"
+     y="488.7532"
+     class="entity-label"
+     id="text25">Reviews DB</text>
+  <!-- Payments DB -->
+  <rect
+     x="826.73523"
+     y="663.75323"
+     width="150"
+     height="40"
+     rx="5"
+     ry="5"
+     class="data-store"
+     id="rect25" />
+  <text
+     x="901.73523"
+     y="688.75323"
+     class="entity-label"
+     id="text26">Payments DB</text>
+  <!-- Notifications DB -->
+  <rect
+     x="476.73523"
+     y="813.75323"
+     width="150"
+     height="40"
+     rx="5"
+     ry="5"
+     class="data-store"
+     id="rect26" />
+  <text
+     x="551.73523"
+     y="838.75323"
+     class="entity-label"
+     id="text27">Notifications DB</text>
+  <!-- Data Flows -->
+  <!-- Guest User Flows -->
+  <path
+     d="m 196.73522,263.75321 h 50"
+     class="data-flow"
+     id="path27" />
+  <text
+     x="192.65114"
+     y="237.75697"
+     class="flow-label"
+     id="text28">Registration/Login data</text>
+  <path
+     d="m 196.73522,273.75321 c 30,70 230,70 280,140"
+     class="data-flow"
+     id="path28" />
+  <text
+     x="326.73523"
+     y="333.7532"
+     class="flow-label"
+     id="text29">Search queries</text>
+  <path
+     d="m 196.73522,283.75321 c 30,30 330,30 450,-20"
+     class="data-flow"
+     id="path29" />
+  <text
+     x="326.73523"
+     y="303.7532"
+     class="flow-label"
+     id="text30">Booking requests</text>
+  <path
+     d="m 196.73522,293.75321 c 30,90 430,90 450,120"
+     class="data-flow"
+     id="path30" />
+  <text
+     x="326.73523"
+     y="373.7532"
+     class="flow-label"
+     id="text31">Reviews ratings</text>
+  <path
+     d="m 406.73522,263.75321 h 40 c 30,0 30,30 30,60 0,30 0,60 30,60"
+     class="data-flow"
+     id="path31" />
+  <text
+     x="456.73523"
+     y="313.7532"
+     class="flow-label"
+     id="text32">User profile data</text>
+  <path
+     d="m 606.73522,413.75321 h 40"
+     class="data-flow"
+     id="path32" />
+  <text
+     x="626.73523"
+     y="398.7532"
+     class="flow-label"
+     id="text33">Search results</text>
+  <text
+     x="766.38574"
+     y="197.02988"
+     class="flow-label"
+     id="text34">Booking confirmations</text>
+  <path
+     d="m 606.73522,433.75321 c 0,15 20,15 40,15"
+     class="data-flow"
+     id="path34" />
+  <path
+     d="m 807.70386,263.20878 c 16.18475,0 16.18475,-51.78178 16.18475,-103.56356"
+     class="data-flow"
+     id="path34-1"
+     style="fill:none;stroke:#616161;stroke-width:2.5071px;marker-end:url(#arrowhead-4)" />
+  <text
+     x="626.73523"
+     y="463.7532"
+     class="flow-label"
+     id="text35">Properties data</text>
+  <!-- Host User Flows -->
+  <path
+     d="m 196.73522,563.75321 h 50"
+     class="data-flow"
+     id="path35" />
+  <text
+     x="221.73521"
+     y="553.75323"
+     class="flow-label"
+     id="text36">Property data</text>
+  <path
+     d="m 196.73522,573.75321 c 30,40 230,90 280,110"
+     class="data-flow"
+     id="path36" />
+  <text
+     x="326.73523"
+     y="623.75323"
+     class="flow-label"
+     id="text37">Host notifications</text>
+  <path
+     d="m 196.73522,553.75321 c 30,-50 30,-300 50,-300"
+     class="data-flow"
+     id="path37" />
+  <text
+     x="176.73521"
+     y="393.7532"
+     class="flow-label"
+     id="text38">Host account data</text>
+  <path
+     d="m 406.73522,563.75321 h 40 c 10,0 10,20 30,20 20,0 250,0 270,-20"
+     class="data-flow"
+     id="path38" />
+  <text
+     x="576.73523"
+     y="603.75323"
+     class="flow-label"
+     id="text39">Property details</text>
+  <!-- Admin User Flows -->
+  <path
+     d="m 196.73522,863.75321 h 50"
+     class="data-flow"
+     id="path39" />
+  <text
+     x="221.73521"
+     y="853.75323"
+     class="flow-label"
+     id="text40">Admin credentials</text>
+  <text
+     x="459.09598"
+     y="889.55127"
+     class="flow-label"
+     id="text41">Notification triggers</text>
+  <path
+     d="m 406.73522,843.75321 c 20,-20 80,-80 120,-100"
+     class="data-flow"
+     id="path41" />
+  <path
+     d="m 396.99001,889.88889 c 12.98423,-9.34184 51.93693,-37.36737 77.9054,-46.70922"
+     class="data-flow"
+     id="path41-2"
+     style="fill:none;stroke:#616161;stroke-width:0.826011px;marker-end:url(#arrowhead-1)" />
+  <text
+     x="446.73523"
+     y="763.75323"
+     class="flow-label"
+     id="text42">Admin actions</text>
+  <!-- Payment Gateway Flows -->
+  <path
+     d="M 1056.7352,563.75321 H 906.73522"
+     class="data-flow"
+     id="path42" />
+  <text
+     x="981.73523"
+     y="553.75323"
+     class="flow-label"
+     id="text43">Payment responses</text>
+  <path
+     d="M 906.73522,583.75321 H 1056.7352"
+     class="data-flow"
+     id="path43" />
+  <text
+     x="981.73523"
+     y="603.75323"
+     class="flow-label"
+     id="text44">Payment requests</text>
+  <!-- Process to Data Store Flows -->
+  <path
+     d="M 326.73522,213.75321 V 146.1051"
+     class="data-flow"
+     id="path44" />
+  <path
+     d="M 345.97335,215.68318 V 147.32915"
+     class="data-flow"
+     id="path44-8"
+     style="fill:none;stroke:#616161;stroke-width:1.75383px;marker-end:url(#arrowhead-9)" />
+  <text
+     x="293.6474"
+     y="168.30464"
+     class="flow-label"
+     id="text45">User data</text>
+  <text
+     x="395.09219"
+     y="167.57755"
+     class="flow-label"
+     id="text46">Read user data</text>
+  <path
+     d="m 326.73522,513.75321 v -50"
+     class="data-flow"
+     id="path46" />
+  <text
+     x="267.83527"
+     y="512.65784"
+     class="flow-label"
+     id="text47">Store property data</text>
+  <path
+     d="m 346.73522,513.75321 v -10 c 0,-30 5,-30 5,-40"
+     class="data-flow"
+     id="path47" />
+  <text
+     x="397.45764"
+     y="512.29431"
+     class="flow-label"
+     id="text48">Read property data</text>
+  <path
+     d="m 726.73522,213.75321 v -50"
+     class="data-flow"
+     id="path48" />
+  <text
+     x="684.92218"
+     y="183.57379"
+     class="flow-label"
+     id="text49">Store bookings</text>
+  <path
+     d="m 751.73522,213.75321 v -10 c 0,-30 0,-40 0,-40"
+     class="data-flow"
+     id="path49" />
+  <text
+     x="864.7146"
+     y="188.66351"
+     class="flow-label"
+     id="text50">Read bookings</text>
+  <path
+     d="m 726.73522,463.75321 v -10"
+     class="data-flow"
+     id="path50" />
+  <text
+     x="706.73523"
+     y="443.7532"
+     class="flow-label"
+     id="text51">Store reviews</text>
+  <path
+     d="m 751.73522,463.75321 v -10"
+     class="data-flow"
+     id="path51" />
+  <text
+     x="776.73523"
+     y="443.7532"
+     class="flow-label"
+     id="text52">Read reviews</text>
+  <path
+     d="m 826.73522,613.75321 v 50"
+     class="data-flow"
+     id="path52" />
+  <text
+     x="806.73523"
+     y="643.75323"
+     class="flow-label"
+     id="text53">Store payment data</text>
+  <path
+     d="m 851.73522,663.75321 v -50"
+     class="data-flow"
+     id="path53" />
+  <text
+     x="876.73523"
+     y="643.75323"
+     class="flow-label"
+     id="text54">Read payment data</text>
+  <path
+     d="m 526.73522,763.75321 v 50"
+     class="data-flow"
+     id="path54" />
+  <text
+     x="501.64551"
+     y="782.84668"
+     class="flow-label"
+     id="text55">Store notifications</text>
+  <path
+     d="m 551.73522,813.75321 v -50"
+     class="data-flow"
+     id="path55" />
+  <text
+     x="622.54266"
+     y="784.3009"
+     class="flow-label"
+     id="text56">Read notification templates</text>
+  <!-- Process to Process Flows -->
+  <path
+     d="m 406.73522,263.75321 c 20,0 50,50 70,100"
+     class="data-flow"
+     id="path56" />
+  <text
+     x="426.73523"
+     y="323.7532"
+     class="flow-label"
+     id="text57">User auth data</text>
+  <path
+     d="m 606.73522,413.75321 c 20,-20 40,-80 70,-100"
+     class="data-flow"
+     id="path57" />
+  <text
+     x="666.73523"
+     y="363.7532"
+     class="flow-label"
+     id="text58">Property selections</text>
+  <path
+     d="m 806.73522,263.75321 c 20,50 50,100 20,250"
+     class="data-flow"
+     id="path58" />
+  <text
+     x="846.73523"
+     y="363.7532"
+     class="flow-label"
+     id="text59">Booking payment data</text>
+  <path
+     d="m 806.73522,563.75321 c -30,50 -130,100 -200,150"
+     class="data-flow"
+     id="path59" />
+  <text
+     x="706.73523"
+     y="643.75323"
+     class="flow-label"
+     id="text60">Payment notifications</text>
+  <path
+     d="m 726.73522,313.75321 c 0,30 0,50 0,50"
+     class="data-flow"
+     id="path60" />
+  <text
+     x="746.73523"
+     y="343.7532"
+     class="flow-label"
+     id="text61">Booking data</text>
+  <path
+     d="m 326.73522,613.75321 c 0,30 0,60 120,80"
+     class="data-flow"
+     id="path61" />
+  <text
+     x="356.73523"
+     y="653.75323"
+     class="flow-label"
+     id="text62">Property updates</text>
+</svg>
